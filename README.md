@@ -1,6 +1,6 @@
-# Spotify API application
+# OpenDota API application
 
-This repository allows you to search for data about artists, tracks and albums.
+This repository allows you to search for data about all players by id.
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ This is a basic REST API application built using [Spring Boot](https://spring.io
 ## Technologies Used
 
 - [Spring Boot](https://spring.io/projects/spring-boot): Web framework for building the REST API.
-- [Spotify Web Api](https://developer.spotify.com/documentation/web-api): An external API for getting information about artists, albums, and tracks.
+- [OpenDota API](https://developer.spotify.com/documentation/web-api): An external API for getting information about players, matches, etc.
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ This is a basic REST API application built using [Spring Boot](https://spring.io
 
 Make sure you have the following installed:
 
-- Java (version 21)
+- Java (version 17)
 - Maven
 
 ### Installation
@@ -35,7 +35,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yimokkh/Spotify-Api
+    git clone https://github.com/dedulya1/open_dota_api
     ```
 
 The application will start on `http://localhost:8080`.
@@ -47,14 +47,14 @@ The application will start on `http://localhost:8080`.
 - **Getting the request data based on the name and type of the request:** 
   
   ```http
-  GET /api/search?name=ARTIST(ALBUM,TRACK)_NAME&type=TYPE_OF_INPUT_VALUES
+  GET /api/search?id=
   ```
 
-  Retrieves information about a given artist, album, or track.
+  Retrieves information about a given player:
 
   Example:
   ```http
-  GET /api/search?name=yeat&type=artist
+  GET /api/search?id=827364621
   ```
 
 
