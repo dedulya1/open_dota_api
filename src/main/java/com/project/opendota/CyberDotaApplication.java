@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CyberDotaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(OpenDotaApplication.class, args);
+        SpringApplication.run(CyberDotaApplication.class, args);
     }
 
 }
